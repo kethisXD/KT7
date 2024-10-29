@@ -1,4 +1,35 @@
 ﻿//
+//TASK 3
+//
+
+public class Calculator
+{
+    public static double Add(double x, double y)
+    {
+        return x + y;
+    }
+
+    public static double Substract(double x, double y)
+    {
+        return x - y;
+    }
+
+    public static double Multipy(double x, double y)
+    {
+        return x * y;
+    }
+
+    public static double Divide(double x, double y)
+    {
+        if (y == 0)
+        {
+            return 0;
+        }
+        return x / y;
+    }
+}
+
+//
 //TASK 2
 //
 abstract class Animal
@@ -80,9 +111,16 @@ class Program
         }
         return resultArray;
     }
+
+    static double GetNumbers(double x, double y, Func<double, double, double> func)
+    {
+         return func(x, y);
+    }
     static void Main()
     {
-        //TASK 1
+        //////////
+        //TASK 1 /
+        //////////
         string[] StringValues = {"1","2","3","4","5","6","7"};
         IConverter<string, int> stringToIntConverter = new StringToIntConverter();
         int[] intResults = ConvertArray(StringValues, stringToIntConverter); 
@@ -103,10 +141,11 @@ class Program
         dynamic[] dynamicValues = { 1, "two", 3.0 };
         string[] dynamicResults = ConvertArray(dynamicValues, dynamicToStrConverter);
         Console.WriteLine("Dynamics to Strings: " + string.Join(", ", dynamicResults));
-        //TASK 1
+        
 
-
-        //TASK 2
+        //////////
+        //TASK 2 /
+        //////////
         List<Animal> animals = new List<Animal>
         {
             new Dog("Бобик"),
@@ -140,5 +179,29 @@ class Program
 
         Console.WriteLine("\nВызов ProcessDogs с Action<Animal> (контрвариантность):");
         ProcessDogs(dogs, actionAnimal);
+    
+        //////////
+        //TASK 3 /
+        //////////
+
+        Func<double, double, double> DoubleOperation;
+        Func<double, double, double> add = Calculator.Add;
+        Func<double, double, double> substract = Calculator.Substract;
+        Func<double, double, double> divide = Calculator.Divide;
+        Func<double, double, double> Multipy = Calculator.Multipy;
+
+        DoubleOperation = add;
+        DoubleOperation += substract;
+        DoubleOperation += divide;
+        DoubleOperation += Multipy;
+        
+        double x = 4;
+        double y = 2;
+        System.Console.WriteLine("x = 4 y = 2");
+        System.Console.WriteLine("add " + GetNumbers(x, y, add));
+        System.Console.WriteLine("substract " + GetNumbers(x, y, substract));
+        System.Console.WriteLine("divide " + GetNumbers(x, y,divide));
+        System.Console.WriteLine("multipy " + GetNumbers(x, y,Multipy));
+
     }
 }
