@@ -1,0 +1,14 @@
+E:\projects\vsc\chsarp\KT7\KT7\bin\Debug\net8.0\KT7.exe
+E:\projects\vsc\chsarp\KT7\KT7\bin\Debug\net8.0\KT7.deps.json
+E:\projects\vsc\chsarp\KT7\KT7\bin\Debug\net8.0\KT7.runtimeconfig.json
+E:\projects\vsc\chsarp\KT7\KT7\bin\Debug\net8.0\KT7.dll
+E:\projects\vsc\chsarp\KT7\KT7\bin\Debug\net8.0\KT7.pdb
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\KT7.GeneratedMSBuildEditorConfig.editorconfig
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\KT7.AssemblyInfoInputs.cache
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\KT7.AssemblyInfo.cs
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\KT7.csproj.CoreCompileInputs.cache
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\KT7.dll
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\refint\KT7.dll
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\KT7.pdb
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\KT7.genruntimeconfig.cache
+E:\projects\vsc\chsarp\KT7\KT7\obj\Debug\net8.0\ref\KT7.dll
